@@ -1,0 +1,93 @@
+/* pages/self/self.wxss */
+page{
+  height:100%;
+}
+.jcs_box{
+
+  width:750rpx;
+  height:100%;
+  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+   background: url('https://upload-images.jianshu.io/upload_images/14812438-980b6905a4295d31.jpg?'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+.box_active{
+  opacity: 1;
+  transition:  opacity 0.5s linear;
+}
+.self_container
+{  width:600rpx;
+    height:850rpx;
+
+
+z-index: 0;
+}
+.self_container::after{
+  content:'';
+  display: block;
+
+   width:600rpx;
+    height:850rpx;
+    top:0rpx;
+    background: rgba(0, 0, 0, 0.3); 
+   
+    border-radius: 20rpx;
+
+}
+.self_info{
+  width:600rpx;
+height:900rpx;
+
+ position: absolute;
+  display: flex;
+ z-index: 999;
+ color:rgb(236, 233, 233);
+ 
+ flex-direction: column;
+ align-items: center;
+}
+
+.self_img image{
+  width:200rpx;
+  height:200rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+  opacity: 0.9;
+
+}
+.self_name{
+  margin: 20rpx 0rpx;
+  font-size: 48rpx;
+}
+.self_job{
+  font-size: 28rpx;
+  color:rgb(235, 233, 233);
+}
+.self_desc{
+   margin: 20rpx 40rpx;
+   font-size:32rpx;
+   letter-spacing: 2rpx;
+   text-indent: 64rpx;
+   
+}
+.self_icon{
+  width:300rpx;
+  margin-top: 20rpx;
+display: flex;
+justify-content:space-around;
+
+}
+.self_icon image{
+  
+  width:80rpx;
+  height:80rpx;
+  opacity: 0.8;
+  border-radius: 50%;
+
+}
+
+

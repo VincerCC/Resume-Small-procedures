@@ -1,0 +1,23 @@
+
+<view class="jcs_box {{show==true?'box_active':''}}">
+  <view class="self_container ">
+    <view class='self_info'>
+        
+          <view class='self_img'>
+          <image src='https://github.com/VincerCC/Plum/blob/master/mine.jpg?raw=true'></image>
+          </view>
+        
+          <view class='self_name'></view>
+          <view class='self_job'>从事前端工作者</view>
+          <view class='self_desc'>Web前端开发工程师,主要职责是利用各种Web技术进行产品的界面开发</view>
+          <view class='self_icon'>
+          <image src='/images/wx.png' bindtap='wx_click'
+          data-index='0'></image>
+          <image src='/images/qq.png' bindtap='wx_click'
+          data-index="1"> </image>
+          </view>
+          
+          
+    </view>
+  </view>
+</view>
